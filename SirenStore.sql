@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.18, for Win64 (x86_64)
 --
--- Host: localhost    Database: SirenStore
+-- Host: localhost    Database: siren_store
 -- ------------------------------------------------------
 -- Server version	5.7.18-log
 
@@ -44,10 +44,10 @@ UNLOCK TABLES;
 -- Table structure for table `orderitem`
 --
 
-DROP TABLE IF EXISTS `orderitem`;
+DROP TABLE IF EXISTS `order_item`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `orderitem` (
+CREATE TABLE `order_item` (
   `ooid` varchar(32) NOT NULL,
   `quantity` int(11) DEFAULT NULL,
   `subtotal` double DEFAULT NULL,
@@ -63,9 +63,9 @@ CREATE TABLE `orderitem` (
 -- Dumping data for table `orderitem`
 --
 
-LOCK TABLES `orderitem` WRITE;
-/*!40000 ALTER TABLE `orderitem` DISABLE KEYS */;
-/*!40000 ALTER TABLE `orderitem` ENABLE KEYS */;
+LOCK TABLES `order_item` WRITE;
+/*!40000 ALTER TABLE `order_item` DISABLE KEYS */;
+/*!40000 ALTER TABLE `order_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
